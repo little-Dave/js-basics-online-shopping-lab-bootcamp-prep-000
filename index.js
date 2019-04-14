@@ -23,10 +23,15 @@ function viewCart() {
   // write your code here
   var inCartNow = [];
   for (let i = 0; i < cart.length; i++) {
-    if (i === 0) {
-      inCartNow.push(`you have ${cart.itemName} at ${cart.itemPrice}`)
+    if (cart.length === 0) {
+      return "Your shopping cart is empty."
+    } else if (i === cart.length - 1) {
+      inCartNow.push(` and ${cart.itemName} at ${cart.itemPrice}.`)
+    } else {
+      inCartNow.push(` ${cart.itemName} at ${cart.itemPrice}`)
     }
   }
+  return `In your cart, you have${inCartNow}.`
 }
 
 function total() {
