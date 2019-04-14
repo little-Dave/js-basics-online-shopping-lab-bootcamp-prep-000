@@ -29,7 +29,7 @@ function viewCart() {
     if (cart.length === 1) {
       inCartNow.push(` ${cart[i].itemName} at $${cart[i].itemPrice}`)
     } else if (i === cart.length - 1) {
-      inCartNow.push(` and ${cart[i].itemName} at $${cart[i].itemPrice}.`)
+      inCartNow.push(` and ${cart[i].itemName} at $${cart[i].itemPrice}`)
     } else {
       inCartNow.push(` ${cart[i].itemName} at $${cart[i].itemPrice}`)
     }
