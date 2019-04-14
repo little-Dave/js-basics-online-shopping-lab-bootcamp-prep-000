@@ -27,11 +27,11 @@ function viewCart() {
   }
   for (let i = 0; i < cart.length; i++) {
     if (cart.length === 1) {
-      inCartNow.push(` ${cart[i].itemName} at ${cart[i].itemPrice}`)
+      inCartNow.push(` ${cart[i].itemName} at $${cart[i].itemPrice}`)
     } else if (i === cart.length - 1) {
-      inCartNow.push(` and ${cart[i].itemName} at ${cart[i].itemPrice}.`)
+      inCartNow.push(` and ${cart[i].itemName} at $${cart[i].itemPrice}.`)
     } else {
-      inCartNow.push(` ${cart[i].itemName} at ${cart[i].itemPrice}`)
+      inCartNow.push(` ${cart[i].itemName} at $${cart[i].itemPrice}`)
     }
   }
   return `In your cart, you have${inCartNow}.`
