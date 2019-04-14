@@ -21,6 +21,12 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
+  var inCartNow = [];
+  for (let i = 0; i < cart.length; i++) {
+    if (i === 0) {
+      inCartNow.push(`you have cart)
+    }
+  }
 }
 
 function total() {
