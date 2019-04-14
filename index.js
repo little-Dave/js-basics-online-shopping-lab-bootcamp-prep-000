@@ -24,7 +24,7 @@ function viewCart() {
   var inCartNow = [];
   for (let i = 0; i < cart.length; i++) {
     if (i === 0) {
-      inCartNow.push(`you have cart)
+      inCartNow.push(`you have ${cart.itemName} at ${cart.itemPrice}`)
     }
   }
 }
