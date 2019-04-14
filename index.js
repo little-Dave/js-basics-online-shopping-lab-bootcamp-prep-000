@@ -21,10 +21,10 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
-  var inCartNow = [];
-  for (let i = 0; i < cart.length; i++) {
-    if (cart.length === 0) {
+  var inCartNow = [];if (cart.length === 0) {
       return "Your shopping cart is empty."
+  for (let i = 0; i < cart.length; i++) {
+    
     if (i === cart.length - 1) {
       inCartNow.push(` and ${cart.itemName} at ${cart.itemPrice}.`)
     } else {
